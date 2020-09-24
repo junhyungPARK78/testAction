@@ -16,7 +16,7 @@ ROOMID = '118327104' # My Chat
 
 post_message_url = f'{ENDPOINT}/rooms/{ROOMID}/messages'
 
-message = 'APIKEY2 : ' + str(APIKEY2) + '\n' + '지금 시간 : ' + datetime.datetime.now()
+message = 'APIKEY2 : ' + str(APIKEY2) + '\n' + '지금 시간 : ' + str(datetime.datetime.now())
 
 headers = { 'X-ChatWorkToken': APIKEY }
 params = { 'body': message }
