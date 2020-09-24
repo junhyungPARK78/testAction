@@ -19,7 +19,9 @@ message = """
     asdf
     asasas
     asasas
-    """ + '\nAPIKEY2 : ' + APIKEY2
+
+    APIKEY2 : 
+    """ + str(APIKEY2)
 
 headers = { 'X-ChatWorkToken': APIKEY }
 params = { 'body': message }
