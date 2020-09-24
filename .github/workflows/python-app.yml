@@ -32,4 +32,4 @@ jobs:
           pip install bs4 requests
       - run: python sendCWMessage.py
         env: # Or as an environment variable
-          SLACK_URL: ${{ secrets.SLACK_URL }}
+          APIKEY: ${{ secrets.APIKEY }}
