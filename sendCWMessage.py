@@ -6,7 +6,8 @@ import os
 import requests
 import pprint
 
-APIKEY = os.getenv('APIKEY')
+# APIKEY = os.getenv('APIKEY')
+APIKEY = 'fd03c00e9c83ef697353bee32a3c58ab'
 
 ENDPOINT = 'https://api.chatwork.com/v2'
 ROOMID = '118327104' # My Chat
