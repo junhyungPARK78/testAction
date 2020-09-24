@@ -8,6 +8,7 @@ import pprint
 
 # APIKEY = os.getenv('APIKEY')
 APIKEY = 'fd03c00e9c83ef697353bee32a3c58ab'
+APIKEY2 = os.getenv('APIKEY')
 
 ENDPOINT = 'https://api.chatwork.com/v2'
 ROOMID = '118327104' # My Chat
@@ -18,7 +19,7 @@ message = """
     asdf
     asasas
     asasas
-    """
+    """ + '\nAPIKEY2 : ' + APIKEY2
 
 headers = { 'X-ChatWorkToken': APIKEY }
 params = { 'body': message }
