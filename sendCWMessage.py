@@ -2,10 +2,12 @@
 # -*- encoding: utf-8 -*-
 
 from __future__ import print_function, unicode_literals
+import os
 import requests
 import pprint
 
-APIKEY = 'fd03c00e9c83ef697353bee32a3c58ab'
+APIKEY = os.environ.get('APIKEY')
+
 ENDPOINT = 'https://api.chatwork.com/v2'
 ROOMID = '118327104' # My Chat
 
@@ -17,7 +19,7 @@ message = """
     asasas
     """
 
-headers = { 'X-ChatWorkToken': APIKEY }
+headers = { 'X-ChatWorkToken': APIKEY[APIKEY] }
 params = { 'body': message }
 
 resp = requests.post(post_message_url,
