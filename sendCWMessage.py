@@ -19,7 +19,7 @@ message = """
     asasas
     """
 
-headers = { 'X-ChatWorkToken': APIKEY[APIKEY] }
+headers = { 'X-ChatWorkToken': APIKEY }
 params = { 'body': message }
 
 resp = requests.post(post_message_url,
