@@ -4,6 +4,7 @@
 from __future__ import print_function, unicode_literals
 import os
 import datetime
+import pytz
 import requests
 import pprint
 
@@ -14,7 +15,7 @@ ROOMID = '118327104' # My Chat
 
 post_message_url = f'{ENDPOINT}/rooms/{ROOMID}/messages'
 
-message = 'APIKEY : ' + str(APIKEY) + '\n' + '지금 시간 : ' + str(datetime.datetime.now())
+message = 'APIKEY : ' + str(APIKEY) + '\n' + '지금 시간 : ' + str(datetime.datetime.now(pytz.timezone('JAPAN')))
 
 headers = { 'X-ChatWorkToken': APIKEY }
 params = { 'body': message }
